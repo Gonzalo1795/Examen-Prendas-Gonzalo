@@ -7,7 +7,7 @@
     <form action="{{ route('prendas.destroy', $prenda->id) }}" method="POST">
         @csrf
         @method('DELETE')
-        <button type="submit" style="background-color: red; color: white;">Sí, eliminar definitivamente</button>
+        <button type="submit">Sí, eliminar definitivamente</button>
         <a href="{{ route('prendas.index') }}">Cancelar</a>
     </form>
 @endsection
